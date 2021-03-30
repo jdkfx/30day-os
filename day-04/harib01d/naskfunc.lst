@@ -1,0 +1,14 @@
+     1 00000000                                 ; naskfunc
+     2 00000000                                 
+     3 00000000                                 [FORMAT "WCOFF"]
+     4 00000000                                 [INSTRSET "i486p"]
+     5 00000000                                 [BITS 32]
+     6 00000000                                 [FILE "naskfunc.nas"]
+     7 00000000                                 
+     8 00000000                                 		GLOBAL	_io_hlt
+     9 00000000                                 
+    10                                          [SECTION .text]
+    11 00000000                                 
+    12 00000000                                 _io_hlt:	; void io_hlt(void);
+    13 00000000 F4                              		HLT
+    14 00000001 C3                              		RET
